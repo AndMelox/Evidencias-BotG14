@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos</title>
+    <script src="Ejercicio8.js"></script> <!-- Carga el script del Ejercicio 8 -->
+</head>
+<body>
+    <h1>Ejercicios Básicos de JavaScript</h1>
+    <p>Haz clic en un botón para ejecutar el ejercicio correspondiente:</p>
+
+    <button onclick="ejecutarEjercicio('Ejercicio1.js')">Ejercicio 1: Mostrar un mensaje en consola</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio2.js')">Ejercicio 2: Pedir el nombre y saludar</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio3.js')">Ejercicio 3: Verificar si un número es par o impar</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio4.js')">Ejercicio 4: Multiplicar dos números</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio5.js')">Ejercicio 5: Determinar si es mayor de edad</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio6.js')">Ejercicio 6: Calcular el área de un triángulo</button><br><br>
+    <button onclick="ejecutarEjercicio('Ejercicio7.js')">Ejercicio 7: Convertir Celsius a Fahrenheit</button><br><br>
+    <button onclick="iniciarContador()">Ejercicio 8: Contador regresivo</button><br><br> <!-- Llama directamente a la función -->
+
+    <script>
+        function ejecutarEjercicio(archivo) {
+            const script = document.createElement('script');
+            script.src = archivo;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
